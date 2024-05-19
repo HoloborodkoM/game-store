@@ -1,10 +1,19 @@
 import React from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
+import { CartBlock } from '../cart-block';
 
 export const Header = () => {
    return (
       <div className="header">
-         Header
+         <div className="wrapper">
+            <Link to="/" className="header-store-title">
+               Game Store
+            </Link>
+         </div>
+         <div className="wrapper header-cart-btn-wrapper">
+            <CartBlock />
+         </div>
       </div>
    )
 } 
