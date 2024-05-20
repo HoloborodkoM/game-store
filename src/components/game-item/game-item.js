@@ -1,9 +1,11 @@
 import React from 'react';
 import './game-item.css';
+import { GameCover } from '../game-cover';
 
 export const GameItem = ({ game }) => {
    return (
       <div className="game-item">
+         <GameCover image={game.image}/>
          <div className="game-item-details">
             <span className="game-item-title">{game.title}</span>
             <div className="game-item-genre">
