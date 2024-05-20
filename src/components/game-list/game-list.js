@@ -1,4 +1,4 @@
-export const GAMES = [
+export const GameList = [
    {
       "image": "/game-covers/broken-roads.jpg",
       "title": "Broken Roads",
