@@ -2,6 +2,7 @@ import React from 'react';
 import './game-item.css';
 import { GameCover } from '../game-cover';
 import { GameBuy } from '../game-buy';
+import { GameGenre } from '../game-genre';
 
 export const GameItem = ({ game }) => {
    return (
@@ -11,7 +12,7 @@ export const GameItem = ({ game }) => {
             <span className="game-item-title">{game.title}</span>
             <div className="game-item-genre">
                {
-                  game.genres.map(genre => genre)
+                  game.genres.map((genre) => <GameGenre genre={genre} key={genre}/>)
                }
             </div>
             <div className="game-item-buy">
