@@ -9,5 +9,5 @@ export const CartItem = ({ title, price }) => {
             <span>{ price }$</span>
          </div>
       </div>
-   )
-}
+   );
+};

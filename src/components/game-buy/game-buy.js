@@ -1,8 +1,8 @@
 import React from 'react';
-import './game-buy.css';
-import { Button } from '../button';
 import { useDispatch, useSelector } from 'react-redux';
 import { setItemInCart, deleteItemFromCart } from '../../store/cart/reducer';
+import { Button } from '../button';
+import './game-buy.css';
 
 export const GameBuy = ({ game }) => {
    const dispatch = useDispatch();
@@ -21,13 +21,13 @@ export const GameBuy = ({ game }) => {
 
    return (
       <div className="game-buy">
-         <span className="game-buy-price">{game.price} $</span>
+         <span className="game-buy-price">{ game.price }$</span>
          <Button
-            type={isItemInCart ? "secondary" : "primary" }
-            onClick={handleClick}
+            type={ isItemInCart ? "secondary" : "primary" }
+            onClick={ handleClick }
          >
-            {isItemInCart ? 'Delete from cart' : 'Add to cart'}
+            { isItemInCart ? 'Delete from cart' : 'Add to cart' }
          </Button>
       </div>
    );
-}
+};

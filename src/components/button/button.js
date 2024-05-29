@@ -1,6 +1,6 @@
 import React from 'react';
-import './button.css';
 import classNames from 'classnames';
+import './button.css';
 
 export const Button = ({
    onClick,
@@ -17,8 +17,8 @@ export const Button = ({
    });
 
    return (
-      <button className={btnClass} onClick={onClick}>
+      <button className={ btnClass } onClick={ onClick }>
          { children }
       </button>
-   )
-}
+   );
+};

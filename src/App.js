@@ -9,10 +9,10 @@ function App() {
     <Provider store={ store }>
       <Router>
         <div className="App">
-          <Header />
+          <Header/>
           <Switch>
             <Route path="/">
-              <HomePage />
+              <HomePage/>
             </Route>
           </Switch>
         </div>
