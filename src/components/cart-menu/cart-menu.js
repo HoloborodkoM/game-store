@@ -25,5 +25,5 @@ export const CartMenu = ({ items, onClick }) => {
             : null
          }
       </div>
-   );
-};
+   )
+}

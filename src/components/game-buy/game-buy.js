@@ -29,5 +29,5 @@ export const GameBuy = ({ game }) => {
             {isItemInCart ? 'Delete from cart' : 'Add to cart'}
          </Button>
       </div>
-   )
+   );
 }

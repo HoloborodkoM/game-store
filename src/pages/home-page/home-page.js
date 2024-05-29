@@ -1,7 +1,7 @@
 import React from 'react';
 import './home-page.css';
 import { GameItem } from '../../components/game-item';
-import { GameList } from '../../components/game-list'
+import { GameList } from '../../store/game-list';
 
 export const HomePage = () => {
    return (
