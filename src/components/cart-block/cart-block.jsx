@@ -27,7 +27,7 @@ export const CartBlock = () => {
             onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}
          />
          { totalPrice > 0 ? <span className="cart-block-total-price">{ totalPrice }$</span> : null }
-         { isCartMenuVisible && <CartMenu items={ items } onClick={ handleGoToOrderClick }/> }
+         { isCartMenuVisible && <CartMenu onClick={ handleGoToOrderClick }/> }
       </div>
    );
 };

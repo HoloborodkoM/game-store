@@ -1,16 +1,23 @@
 import React from 'react';
+import { useSelector } from "react-redux";
 import { Button } from '../button';
 import { CartItem } from '../cart-item';
 import { calcTotalPrice } from '../utils';
 import './cart-menu.css';
 
-export const CartMenu = ({ items, onClick }) => {
+export const CartMenu = ({ onClick }) => {
+   const items = useSelector((state) => state.cart.itemsInCart);
+
    return (
       <div className="cart-menu">
          <div className="cart-menu-games-list">
             {
-               items.length > 0 ? (items.map(game => 
-               <CartItem price={ game.price } title={ game.title }/>)) : 'Empty cart'
+               items.length > 0 ? (items.map(game =>
+               <CartItem
+                  price={ game.price }
+                  title={ game.title }
+                  id={ game.id }
+               />)) : 'Empty cart'
             }
          </div>
          {

@@ -18,12 +18,7 @@ export const OrderPage = () => {
          </div>
          <div className="order-page-right">
             <div className="order-page-total-price">
-               <span>{ items.length } 
-                  { enumerate(
-                     items.length, 
-                     ['game', 'games']
-                  )} at the rate of { calcTotalPrice(items) }$
-               </span>
+               <span>{ items.length } { enumerate(items.length, ['game', 'games'])} at the rate of { calcTotalPrice(items) }$</span>
             </div>
          </div>
       </div>
