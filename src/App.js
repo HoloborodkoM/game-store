@@ -2,17 +2,21 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import { HomePage } from "./pages/home-page";
+import { GamePage } from "./pages/game-page";
 import { Header } from "./components/header";
 
 function App() {
   return (
-    <Provider store={ store }>
+    <Provider store={store}>
       <Router>
         <div className="App">
           <Header/>
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <HomePage/>
+            </Route>
+            <Route exact path="/app/:title">
+              <GamePage/>
             </Route>
           </Switch>
         </div>
