@@ -7,11 +7,11 @@ The functionality is quite simple - adding, deleting, viewing games, as well as 
 
 ## How to start use
 1. If you do not have Node.js, install it on official site. My version `18.9.1` (recommended version is `>18`).  
-Can use `nvm` to switch the version. 
+   Can use `nvm` to switch the version. 
 2. Clone repository via
-```
-git clone https://github.com/HoloborodkoM/game-store.git
-```
+   ```
+   git clone https://github.com/HoloborodkoM/game-store.git
+   ```
 3. Open a terminal and change directory
    ```
    cd game-store
